@@ -9,7 +9,7 @@ html, body {
 }
 
 body {
-    background-color: #6362622c;
+    background-color: #618bff2c;
     display: flex;
     flex-direction: column;
 }
@@ -27,57 +27,94 @@ header {
 
 }
 
-header, .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-h1, .menu-hamburguer {
-    left: 0;
-}
-
 .menu {
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.menu-button {
+    display: flex;
+    cursor: pointer;
+    width: 150px;
 }
 
 .menu-hamburguer {
     display: flex;
     flex-direction: column;
-    width: 25px;
-    cursor: pointer;
+    gap: 4px;
 }
 
 .menu-hamburguer span {
+    width: 24px;
+    height: 3px;
     background-color: #fff;
-    height: 2px;
-    width: 100%;
-    margin-bottom: 4px;
+}
+
+.menu-label {
+    color: #fff;
+    margin-left: 8px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 nav {
+    position: absolute;
+    top: 126%;
+    left: 0;
+    right: 0;
+    background-color: rgba(5, 30, 143, 0.95);
+    font-weight: bold;
     overflow: hidden;
-    height: 0;
-    transition: height 0.3s ease;
+    display: none;
+    transition: height 0.7s ease;
+    z-index: 1;
 }
 
 nav.open {
-    height: auto;
+    display: block;
+}
+
+.menu form {
+    padding: 16px;
+}
+
+.menu form input, .menu form button {
+    height: 30px;
+}
+
+#pesquisa-noticia {
+    padding: 6px;
+}
+
+#btn-search {
+    text-transform: uppercase;
+    background-color: rgba(50, 86, 195, 0.808);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 6px 12px;
+}
+
+#btn-search:hover {
+    background-color: rgba(50, 86, 195, 0.374);
 }
 
 h1, h1 a{
     color: #fff;
 }
 
-header ul li {
-    margin-left: 16px;
+nav ul li {
+    display: block;
+    line-height: 25px;
+    text-align: left;
     list-style: none;
-    display: inline;
-    padding-left: 15px;
+    padding-left: 14%;
     text-transform: uppercase;
 }
 
-a { /*Retirei a decoração de todos os links da página*/
+a {
     text-decoration: none;
 }
 

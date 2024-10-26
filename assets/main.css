@@ -28,34 +28,7 @@ h2 {
 #container {
     padding: 0 20px;
 }
-/*
-.rodape {
-    background-color: rgba(23, 25, 24, 0.294);
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-}
 
-.rodape p {
-    font-size: 18px;
-    text-align: center;
-    flex-grow: 1;
-}
-
-.rodape a {
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-}
-
-.rodape img {
-    height: 30px;
-}
-*/
-
-/* Estilo Global dos Parágrafos */
 p {
     font-size: 18px;
     line-height: 1.6;
@@ -64,7 +37,6 @@ p {
     text-align: justify;
 }
 
-/* Estilos Específicos para as Seções */
 section h2 {
     margin-bottom: 20px;
     font-size: 24px;
@@ -72,7 +44,6 @@ section h2 {
     letter-spacing: 1px;
 }
 
-/* Background para diferenciar as seções */
 #sports, #economy, #games, #tech {
     background-color: rgba(230, 230, 250, 0.2);
     padding: 20px;
@@ -80,7 +51,6 @@ section h2 {
     margin-bottom: 20px;
 }
 
-/* Card container (flex layout) */
 .card-container {
     display: flex;
     flex-direction: column;
@@ -98,7 +68,6 @@ section h2 {
     display: block;
 }
 
-/* Card styles */
 .card {
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.1);

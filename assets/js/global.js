@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('.menu-hamburguer').click(function() {
+    $('.menu-button').click(function() {
         $('nav').toggleClass('open'); // Alterna a classe 'open'
         if ($('nav').hasClass('open')) {
             // Calcula a altura total do nav e define
